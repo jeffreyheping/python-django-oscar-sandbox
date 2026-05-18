@@ -1,0 +1,14 @@
+django-oscar[sorl-thumbnail]
+django
+django-haystack
+Whoosh
+sorl-thumbnail
+Pillow
+django-widget-tweaks
+django-tables2
+django-extra-views
+django-environ
+whitenoise
+django-phonenumber-field
+phonenumbers
+factory-boy
