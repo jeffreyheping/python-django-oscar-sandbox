@@ -39,13 +39,15 @@ CACHES = {
 # On Unix systems, a value of None will cause Django to use the same
 # timezone as the operating system.
 USE_TZ = True
-TIME_ZONE = 'Europe/London'
+#TIME_ZONE = 'Europe/London'
+TIME_ZONE = 'Asia/Shanghai'
 
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-gb'
+#LANGUAGE_CODE = 'en-gb'
+LANGUAGE_CODE = 'zh-hans'
 
 # Includes all languages that have >50% coverage in Transifex
 # Taken from Django's default setting for LANGUAGES
