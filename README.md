@@ -104,6 +104,22 @@ python manage.py runserver
 - 用户名：`admin`
 - 密码：`admin`
 
+### 搜索功能注意事项
+
+项目使用 **Haystack + Whoosh** 作为搜索引擎。如果搜索功能不工作或返回空结果，可能是因为搜索索引不存在或损坏。
+
+**重建搜索索引**：
+
+```bash
+# 如果 whoosh_index 目录缺失或索引损坏，运行此命令
+python manage.py rebuild_index --noinput
+```
+
+**说明**：
+- ✅ 索引重建后立即生效，无需重启 Django
+- ✅ 会自动创建 `whoosh_index/` 目录
+- ✅ 默认会索引 82 个商品数据
+
 ---
 
 ## 更多文档
